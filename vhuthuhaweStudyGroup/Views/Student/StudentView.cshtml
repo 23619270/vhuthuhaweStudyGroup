@@ -1,0 +1,25 @@
+﻿@model List<vhuthuhaweStudyGroup.ViewModels.StudentsViewModel>
+@{
+    ViewBag.Title = "StudentView";
+}
+
+<h2>Study group members</h2>
+<table class="table">
+    <tr>
+        <th>STUDENT NUMBER</th>
+        <th>NAME</th>
+        <th>SURNAME</th>
+        <th>EMAIL ADDRESS</th>
+    </tr>
+    @foreach (var students in Model)
+    {
+        <tr>
+            <td>@students.StudentNumber</td>
+            <td>@students.Name</td>
+            <td>@students.Surname</td>
+            <td>@students.Email</td>
+        </tr>
+    }
+</table>
+
+
